@@ -42,9 +42,24 @@ header {
     align-items: center;
 }
 
+/* --- UPDATE LOGO DI SINI --- */
+.logo {
+    display: flex;
+    align-items: center; /* Biar gambar sama teks sejajar ke tengah */
+    gap: 12px; /* Jarak antara gambar dan teks */
+}
+
+.logo img {
+    height: 50px; /* Tinggi gambar logo */
+    width: 50px; 
+    border-radius: 50%; /* Bikin gambar bulat sempurna */
+    object-fit: cover; /* Biar gambar gak gepeng */
+}
+
 .logo h1 {
     font-size: 28px;
     color: var(--text-color);
+    margin: 0; /* Menghilangkan margin bawaan h1 */
 }
 
 .logo span {
@@ -73,6 +88,16 @@ nav a:hover {
     background: linear-gradient(rgba(253, 246, 227, 0.9), rgba(253, 246, 227, 0.9)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
     padding: 100px 0;
     text-align: center;
+}
+
+/* --- TAMBAHAN BUAT LOGO GEDE DI TENGAH (KALAU MAU DIPAKE) --- */
+.hero-logo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(92, 58, 33, 0.2); /* Efek bayangan */
+    object-fit: cover;
 }
 
 .hero h2 {
