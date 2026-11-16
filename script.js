@@ -55,17 +55,3 @@ function renderProducts() {
 
 // Menjalankan fungsi saat halaman selesai dimuat
 document.addEventListener('DOMContentLoaded', renderProducts);
-
-// Efek Smooth Scrolling untuk navigasi
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        window.scrollTo({
-            top: targetElement.offsetTop - 70, // 70px offset untuk navbar
-            behavior: 'smooth'
-        });
-    });
-});
