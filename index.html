@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelicious - Crispy Outside, Delicious Inside!</title>
     
-    <!-- INI YANG BIKIN CSS LU GAK JALAN TADI (Tadi ilang) -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Favicon (Ikon di tab browser) -->
     <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
 
-    <!-- Navbar (Cuma boleh ada SATU) -->
+    <!-- Navbar -->
     <header>
         <div class="container navbar">
             <div class="logo">
@@ -26,7 +23,6 @@
             <nav>
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#menu" class="nav-link">Menu</a></li>
                     <li><a href="#about" class="nav-link">Tentang Kami</a></li>
                     <li><a href="#contact" class="nav-link">Kontak</a></li>
                 </ul>
@@ -39,17 +35,8 @@
         <div class="container hero-content">
             <h2>Crispy Outside,<br>Delicious Inside!</h2>
             <p>Nikmati sensasi pastel renyah dengan isian melimpah yang bikin nagih. Dibuat fresh setiap hari!</p>
-            <a href="#menu" class="btn-primary">Lihat Menu Kami</a>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <div class="container">
-            <h2 class="section-title">Varian Pastel Kami</h2>
-            <div class="menu-grid" id="product-list">
-                <!-- Produk akan di-render oleh JavaScript -->
-            </div>
+            <!-- Tombol ini yang bakal mancing popup menu keluar -->
+            <a href="#" id="open-menu-btn" class="btn-primary">Lihat Menu Kami</a>
         </div>
     </section>
 
@@ -71,8 +58,10 @@
             <p>Kami siap melayani pesanan Anda. Hubungi kami melalui:</p>
             <div class="contact-links">
                 <a href="#" class="btn-secondary">WhatsApp</a>
-                <a href="#" class="btn-secondary">Instagram</a>
-                <a href="#" class="btn-secondary">Facebook</a>
+                <!-- GANTI LINK INSTAGRAM LU DI SINI -->
+                <a href="https://instagram.com/pasteliciouss.id" target="_blank" class="btn-secondary">Instagram</a>
+                <!-- GANTI LINK FACEBOOK LU DI SINI -->
+                <a href="https://facebook.com/Pasteliciouss ID" target="_blank" class="btn-secondary">Facebook</a>
             </div>
         </div>
     </section>
@@ -84,7 +73,17 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- POPUP MODAL MENU (Tersembunyi di awal) -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="section-title">Varian Pastel Kami</h2>
+            <div class="menu-grid" id="product-list">
+                <!-- Produk bakal di-render JS masuk ke sini -->
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
